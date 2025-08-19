@@ -1,0 +1,10 @@
+#carousel_LP {
+  height: 40vh; /* fixe la hauteur du carousel */
+}
+
+#carousel_LP .carousel-inner,
+#carousel_LP .carousel-item,
+#carousel_LP img {
+  height: 100%; /* occupe toute la hauteur du parent */
+  object-fit: contain; /* ajuste l’image sans la déformer */
+}
