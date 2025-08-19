@@ -2,9 +2,17 @@
   height: 40vh; /* fixe la hauteur du carousel */
 }
 
-#carousel_LP .carousel-inner,
-#carousel_LP .carousel-item,
-#carousel_LP img {
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(100%); /* blanc -> noir */
+}
+carousel-indicators {
+    position: static; /* plus en absolute */
+    margin-top: 10px; /* espace entre l'image et les indicateurs */
+}
+
+#carousel_LP .carousel-inner, #carousel_LP .carousel-item, #carousel_LP img {
   height: 100%; /* occupe toute la hauteur du parent */
   object-fit: contain; /* ajuste l’image sans la déformer */
 }
+
